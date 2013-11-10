@@ -1,0 +1,8 @@
+body{
+	font: 1em Arial,Helvetica,sans-serif;
+	color: #333;
+}
+/* URL Resets */
+a, a:link, a:active, a:visited{
+	color: #2A5DB0;
+}

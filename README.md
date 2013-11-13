@@ -10,3 +10,5 @@ Tech For Local deployment:
 * html5
 * css3
 * jquery
+
+*Note*: To preview live the template is available on heroku: [Heroku](http://secure-wildwood-3465.herokuapp.com)

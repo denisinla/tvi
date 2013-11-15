@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,6 +8,8 @@
 <meta name="description" content="Voice Internet, 800-555-5555, Voice-Activated, Speech Applications, CallWords, VoiceFront, Commandwords, VoiceQA, Callpointers, Virtual Receptionist, 800 number, Toll Free numbers, Vanity or Local Number, Send and receive files over the phone, live Call Routing, Call Forwarding, speak-to-call, auto-attendant, and many other features" /><meta name="keywords" content="The Voice Internet, CallWords, 800-555-5555, Productivity Suite, VoiceFront, CommandWords, Voice QA, Callpointers, Virtual Receptionist, Call Routing, live call forwarding, voice-activated receptionist, virtual phone system, dial by name, speak-to-call, toll free number, 800 number, Voice Internet, 800-555-5555, all fives, Microsoft Award, speech prompts, Robert Blaisch, Direct Response Solution, Competitive Advantage,Voice Dialing, Voice Control, Travel Directory, 800-555-55555" />
 <!-- begin stylesheets //-->
 <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="http://thevoiceinternet.com/_css/common.css" media="all" />
 <link rel="stylesheet" type="text/css" href="http://thevoiceinternet.com/_css/layout.css" media="all" />
 <link rel="stylesheet" type="text/css" href="http://thevoiceinternet.com/_css/nav.css" media="all" />
@@ -67,11 +67,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$sm1', 'aspnetForm', [], [], [
 
 
 <style>
-h3{
-	font: 16px 'Nunito',sans-serif;
-	font-weight: normal;
-	line-height: 22px;
-}
 #globalNav #primary, #globalNav #secondary
 {
 	background:url("http://thevoiceinternet.com/_css/_img/global-nav-sprite.gif") no-repeat;
@@ -413,12 +408,117 @@ li#cmanager a:hover, .cmanager li#cmanager a
 {
 	background-position: -140px -495px;
 }
+/* ---------------------------- */
+/* LATEST OVERRIDES TO BE ADDED */
+/* ---------------------------- */
+.container #main{
+	margin-bottom:50px;
+}
+.container #main h3{
+	font: 20px 'Open Sans Condensed',sans-serif;
+	font-weight: 300;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin: 0.5em 0 0.5em 0;
+	padding:0 0 0 0;
+}
+.container{
+	background: transparent;
+}
+.container #sidebar{
+	width: 130px;
+}
+.container #main{
+ width:450px;
+}
+.container #main p{
+	margin: 1em 0 0 0;
+	padding: 0 0 0 0;
+}
+.container #main h3{
+	text-transform: uppercase;
+}
 .container #main ul{
-	margin: 0 0 0 1.6em;
+	margin: 1em 0 0 1.6em;
 	padding: 0 0 0 0;
 }
 .container #main li{
 	list-style-type: none;
+}
+#wrapper-main #global-content{
+	background: transparent;
+}
+#sidebar ul{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#sidebar ul li{
+	list-style-type: none;
+	text-align:right;
+	margin-top: 10px;
+}
+.sprites{
+	background: url(/images/sprites.png);
+}
+.hiw{
+	background-position: -4px -6px;
+	width:25px;
+	height:25px;
+	display:block;
+}
+.tyl{
+	background-position: -4px -36px;
+	width:23px;
+	height:24px;
+	display:block;
+}
+.tyw{
+	background-position: -4px -72px;
+	width:23px;
+	height:25px;
+	display:block;
+}
+.rt{
+	background-position: -4px -107px;
+	width:32px;
+	height:19px;
+	display:block;
+}
+.pat{
+	background-position: -4px -134px;
+	width:25px;
+	height:26px;
+	display:block;
+}
+span{
+	padding:0 0 0 0;
+	margin: 0 0 0 0;
+}
+.container #main ul#header-list{
+	margin:1em 0 1em 0;
+	padding: 0 0 0 0;
+}
+.container #main #header-list li{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	display: inline-block;
+	line-height:51px;
+	vertical-align: middle;
+}
+#wrapper-main #sidebar{
+	width:120px;
+	float: right;
+}
+.add-to-cart{
+	background:#66aaff;
+	color: #fff;
+	padding: 8px;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font: bold 13px 'Open Sans Condensed',sans-serif;
+	text-transform: uppercase;
 }
 </style>
 <ul id="nav-products" class="cmanager">
@@ -428,16 +528,12 @@ li#cmanager a:hover, .cmanager li#cmanager a
     <li id="ppcbenefits"><a href="../leadgen/benefits.aspx"><span>Pay Per Call Benefits</span></a></li>
     <li id="ppcfaqs"><a href="../leadgen/faq.aspx"><span>Pay Per Call FAQs</span></a></li>
     <li id="ppcfeaturedcampaigns"><a href="../leadgen/featuredcampaigns.aspx"><span></span></a></li>
-
     <li id="callgenerationservices" class="header"><a href="../callwords/"><span>Call Generation Services</span></a></li>
     <li id="nationalcallwords"><a href="../callwords/national.aspx"><span>National Callwords</span></a></li>
     <li id="citycallwords"><a href="../callwords/city.aspx"><span>City Callwords</span></a></li>
     <li id="categorycallwords"><a href="../callwords/categories.aspx"><span>Category Callwords</span></a></li>
     <li id="calllinks"><a href="../call_links/"><span>Click-to-Call Links</span></a></li>
     <li id="callpointers"><a href="../call_pointers/"><span>CallPointers</span></a></li>
-
-
-
     <li id="callmanagement" class="header"><a href="../voicefront/"><span>Call Management</span></a></li>
     <li id="virtualreceptionist"><a href="../voicefront/"><span>Virtual Receptionist</span></a></li>
     <li id="virtualoffice"><a href="../commandwords/"><span>Virtual Office</span></a></li>
@@ -473,13 +569,51 @@ fo.write("presentation_container");
     	<li>- Ad inserts on landing pages track and bill for page views</li>
     	<li>- Start participating in a whole new way to earn revenue</li>
 		</ul>
+		<!-- How it works -->
+		<ul id="header-list">
+			<li><span class="sprites hiw"></span></li>
+			<li><h3>How it Works</h3></li>
+		</ul>
+		<p>Come up with an idea for a give away prize or contest. Use the Contest Manager to choose your winning numbers
+Then create landing pages that are accessed via text links that are sent out to your viewers when they call in. These landing pages contain links that viewers can click on to be directed to offers from your advertisers. Every time a viewer lands your advertisers page, we charge the advertiser for the traffic and give the lion share of the revenues to you.</p>
+  	<!-- Tell your listeners -->
+		<ul id="header-list">
+			<li><span class="sprites tyl"></span></li>
+			<li><h3>Tell your listeners</h3></li>
+		</ul>
+		<p>Tell your listeners to call 800-555-5555 and say a CallWord like "FREE TICKETS", "FREE MUSIC" FREE MOVIES" or whatever else you want to promote. Using a 800-555-5555 and a CallWord will dramatically increase the number of call ins because listeners can easily remember the all 5’s number and a CallWord much easier than a remembering regular toll free number.</p>
+		<p>Then when your callers dial 800-555-5555 and say your contest keyword, all the non-winning calls are answered in your hosts voice who informs them that they didn't win the prize but just for calling in are now eligible for special discounts from selected advertisers. Advertising inserts are automatically injected into the landing pages by the publisher’s choices and achieve page position by bidding.</p>
+		<!-- Track your winners -->
+		<ul id="header-list">
+			<li><span class="sprites tyw"></span></li>
+			<li><h3>Track your winners</h3></li>
+		</ul>
+		<p>The winning caller will hear a different message and get a different text and can even be connected To the station to claim their prizes
+		When the viewer clicks on an advertiser’s link, the advertiser is billed for the traffic. The system allows radio stations to drive page traffic directly from the broadcast and to participate in the most lucrative advertising revenue stream on the web.</p>
+		<!-- Earn New Revenues -->
+		<ul id="header-list">
+			<li><span class="sprites rt"></span></li>
+			<li><h3>Earn New Revenues</h3></li>
+		</ul>
+		<p>Revenue is captured by the system from advertisers and is automatically distributed to the publisher hosting the contest. A completely transparent web based revenue reporting system allow publishers to audit transactions. It’s a complete turnkey software-as-a-service.</p>
+		<!-- Earn New Revenues -->
+		<ul id="header-list">
+			<li><span class="sprites pat"></span></li>
+			<li><h3>Powerful Analytics Tools</h3></li>
+		</ul>
+		<p>Additionally analytic tools are also provided to tell the publisher how many calls came it, the geographic region the calls are coming from, the time of day, day of week of the calls. It’s all presented in a graph format to easily interpret your results.</p>
   </div>
-	<!-- end main -->
-	<div id="sidebar">
+  <div id="sidebar">
   	<ul>
-			<li class="update" style="text-align:center"><input type="submit" name="ctl00$cph_main$btn_update" value="Add to Cart" id="ctl00_cph_main_btn_update" /></li>
+			<li class="update">
+				<input type="submit" name="ctl00$cph_main$btn_update" value="Get it Today" id="ctl00_cph_main_btn_update" class="add-to-cart" />
+			</li>
     </ul>
 	</div>
+  </div>
+  </div>
+
+	<!-- end main -->
 </div>
 </div>
 	</div>
@@ -487,7 +621,6 @@ fo.write("presentation_container");
 <!-- end #wrapper -->
 <div id="wrapper-footer"></div>
 <div id="global-footer">
-
 <ul class="nav-footer clearfix">
 	<li><a href="/about_us/the_company.aspx">The Company</a></li>
 	<li><a href="/about_us/privacy_policy.aspx">Privacy Policy </a></li>
@@ -496,8 +629,6 @@ fo.write("presentation_container");
 	<li id="last"><a href="http://agents.thevoiceinternet.com/public/" target="_blank">Agent Opportunities </a></li>
 	<li id="copyright" class="clearfix"><span class="fineprint">&copy;2000-2013 Voice Internet, Inc.</span> All rights reserved.</li>
 </ul>
-
-
 </div>
 </form>
 </body>

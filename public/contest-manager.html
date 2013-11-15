@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="http://thevoiceinternet.com/_css/nav.css" media="all" />
 <link rel="stylesheet" type="text/css" href="http://thevoiceinternet.com/_css/forms.css" media="all" />
 <link rel="stylesheet" type="text/css" href="http://thevoiceinternet.com/_css/products.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/animate.min.css" media="all" />
 <!-- begin scripts //-->
 </head>
 <body onload="_init();">
@@ -49,8 +50,8 @@ function __doPostBack(eventTarget, eventArgument) {
 <script src="http://thevoiceinternet.com/ScriptResource.axd?d=-Jgo6zXKQ-Wcat8k77AO4qzx3aidkNToX6BMiaXwfcj_uX24XBKEdzXevi3NFAU98iAY1mZDr_x0dLMB58vvYZ53CjSCJ8bIJsKpv59oIFJ6QagSFahr5f_ZE1C-X5GiyIUBba0FS4QlDZnlb6ekiB7O43kqNMhrxa6b2xIpTfg1&amp;t=ffffffff940d030f" type="text/javascript"></script>
 <script src="http://thevoiceinternet.com/ScriptResource.axd?d=LxHfjMkrGaaNRp9PoVOTS6VmIzWLoGBz-Nw8wdH6QPlhWZiS6DLGo2ZwJVKwWbhCgZmPG2LENQ5Y2uCs5Df4SnfgKhOSdJwHElG7fbhR2yOEgRX8OQqNa5wEbP1yrAMpp3kdDTqKkdjYTXyAZ9M8dQ5o3-XKYDZJ6OJ8bHsKummFt4rju_Su5wji5vH7OLBK0&amp;t=ffffffff940d030f" type="text/javascript"></script>
 <script src="../../_JS/core.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
 <div>
-
 	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKp6dK4CwK46Z+QAgLE15GtAXFnmXz7UVLjLV/7uFKfoxrMEzw9M+5na++2WxAqgjig" />
 </div>
 <script type="text/javascript">
@@ -58,7 +59,11 @@ function __doPostBack(eventTarget, eventArgument) {
 Sys.WebForms.PageRequestManager._initialize('ctl00$sm1', 'aspnetForm', [], [], [], 90, 'ctl00');
 //]]>
 </script>
-
+<script type="text/javascript">
+	$(function(){
+		$('#slide-text > li').addClass('animate slideRight').css('display','block');
+	});
+</script>
 
 <div id="wrapper-header"></div>
 <!-- begin #wrapper -->
@@ -521,6 +526,23 @@ span{
 	font: bold 13px 'Open Sans Condensed',sans-serif;
 	text-transform: uppercase;
 }
+#presentation_container{
+	position:relative;
+}
+#slide-text{
+	position:absolute;
+	top:10px;
+	right: 0;
+	text-align:right;
+	color:#fff;
+}
+#slide-text ul{
+	margin: 0;
+	padding: 0;
+}
+#slide-text li{
+	display: none;
+}
 </style>
 <ul id="nav-products" class="cmanager">
     <li id="paypercall" class="header"><a href="../leadgen/introduction.aspx"><span>Pay Per Call</span></a></li>
@@ -549,6 +571,15 @@ span{
 
 <script type="text/javascript" src="/_JS/flashobject.js"></script>
 	<div id="presentation_container" class="header clearfix">
+		<div id="slide-text">
+			<ul>
+				<li>Increase your station or program listeners</li>
+				<li>Not complicated - easy to set up and manage</li>
+				<li>No added expense of managing promotion</li>
+				<li>No need to provide a staff to answer phone calls</li>
+				<li>Discover a completely new source of revenues</li>
+			</ul>
+		</div>
 		<img src="/images/contest-manager-banner.jpg" alt="Contest Manager - The Voice Internet" border="0" />
 	</div>
 <script type="text/javascript">

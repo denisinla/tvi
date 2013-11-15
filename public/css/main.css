@@ -20,8 +20,30 @@ article#header{
 	max-width:960px;
 	max-height:95px;
 }
+
+/* Mobile Content */
+
+header{
+	width:100%;
+	height:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
 @media only screen and (min-width: 315px){
+	header{
+		max-width: 100%;
+		height: auto;
+	}
 	h1{
 		text-align: center;
+	}
+	h3{
+		font-size:1em;
+		text-align: center;
+	}
+	.column, .columns{
+		padding-left: 0.0em;
+		padding-right: 0.0em;
 	}
 }

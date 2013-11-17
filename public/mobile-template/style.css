@@ -98,7 +98,7 @@ header h1{
 /* NAVIGATION */
 
 nav{
-  margin: 7px 0 7px 0;
+  margin: 0 0 0 0;
 }
 
 nav ul{
@@ -121,7 +121,7 @@ nav a{
   display: block;
   padding: 7px 0 7px 5%;
   margin: 0 0 0 4%;
-  background-color: rgba(255,255,255,0.1);
+  background-color: transparent;
 }
 
 
@@ -144,8 +144,8 @@ nav a{
   }
 
   #container, .inner{
-    width: 90%;
-    padding: 0 5% 0 5%;
+    width: 100%;
+    padding: 0 0 0 0;
   }
 }
 
@@ -161,10 +161,12 @@ nav a{
   }
 }
 
-/* Custom Breakpoints */
-
-@media screen and (max-width: px) {
- /* Add your styles for devices with a maximum width of  */
+@media screen and (max-width: 320px) {
+	h2#dynamic-message{
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
 }
 
 

@@ -138,14 +138,21 @@ nav a{
 	background: #000;
 	color: #fff;
 	padding: 5em 0 5em 0;
+	width:100%;
 }
 #dynamic-message h1{
 	text-align: center;
-	width: 20em;
 	margin: 0 auto;
 	font-size: 2.5em;
 }
-
+#bottom-message{
+	background: #ccc;
+	color: #333;
+	padding:10px;
+}
+#bottom-message h2{
+	font-weight: normal;
+}
 /* MEDIA QUERIES */
 
 /* Responsify Defaults */
@@ -183,11 +190,48 @@ nav a{
 }
 
 @media screen and (max-width: 320px) {
-	h2#dynamic-message{
+	#dynamic-message h2{
 		text-align: center;
 		font-size: 1.2em;
 		line-height: 1.2em;
 	}
+	nav .span0{
+    width: 100%;
+  }
+
+  .span1, article{
+    width: 100%;
+    overflow:hidden;
+  }
+
+  .span0, aside{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #container, .inner{
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+  #top-header h2{
+  	text-align: center;
+  	font-size: 1.1em;
+  }
+  #dynamic-message{
+  	margin: 0 0 0 0;
+  	padding: 1em 0 1em 0;
+  }
+  #dynamic-message h1{
+  	text-align: center;
+  	font-size: 1.5em;
+  	width:auto;
+  }
+  #bottom-message h2{
+  	text-align: center;
+  	font-size: 1em;
+  	line-height: 1.2em;
+  }
 }
 
 

@@ -74,10 +74,11 @@ p{
 
 #container, .inner{
   margin: 0 auto;
+  width:960px;
 }
 
 header{
-  background: #262F37;
+	height: 95px;
 }
 
 header h1{
@@ -86,7 +87,7 @@ header h1{
 
 #container{
   clear: both;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .alt{
@@ -124,6 +125,26 @@ nav a{
   background-color: transparent;
 }
 
+/* Sections */
+#top-header{
+	background: #111;
+	color: #fff;
+	padding:10px;
+}
+#top-header h2{
+	font-weight: normal;
+}
+#dynamic-message{
+	background: #000;
+	color: #fff;
+	padding: 5em 0 5em 0;
+}
+#dynamic-message h1{
+	text-align: center;
+	width: 20em;
+	margin: 0 auto;
+	font-size: 2.5em;
+}
 
 /* MEDIA QUERIES */
 

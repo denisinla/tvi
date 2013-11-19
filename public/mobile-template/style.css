@@ -53,7 +53,7 @@ body{
   color: #252e35;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5em;
-  background: #f6f6f6;
+  background: #fff;
 }
 
 h1{
@@ -146,13 +146,42 @@ nav a{
 	font-size: 2.5em;
 }
 #bottom-message{
-	background: #ccc;
+	background: #111;
 	color: #333;
 	padding:10px;
 }
 #bottom-message h2{
 	font-weight: normal;
+	color: #fff;
 }
+#message-text{
+	color: #ff0000;
+}
+#contest-image{
+	background: url(images/audi-a4.jpg);
+	width:960px;
+	height:480px;
+}
+#ad-content{
+
+}
+#ad-content article{
+
+}
+#ad-content article h2{
+	font-size: 1.5em;
+}
+/* Button Styles */
+button{
+	width: auto;
+	background: #2ba6cb;
+	border: 1px solid #1e728c;
+	border-radius: 5px;
+	color: #fff;
+	padding: 5px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	}
 /* MEDIA QUERIES */
 
 /* Responsify Defaults */
@@ -220,18 +249,80 @@ nav a{
   }
   #dynamic-message{
   	margin: 0 0 0 0;
-  	padding: 1em 0 1em 0;
+  	padding: 0 0 0 0;
   }
   #dynamic-message h1{
-  	text-align: center;
-  	font-size: 1.5em;
+  	text-align: left;
+  	font-size: 1.2em;
   	width:auto;
+  	padding: 5px;
   }
+  #contest-image{
+  }
+  #contest-image{
+  	width:320px;
+  	height:160px;
+  	display:block;
+  	background-size: 320px 160px;
+  	background-repeat: no-repeat;
+  }
+  #ad-content{
+  	height: auto;
+  	min-height: 106px;
+  	border-bottom:1px solid #ccc;
+  	padding: 5px 0 5px 0;
+  }
+  #ad-content article{
+  	float: left;
+  	width: 50%;
+  	padding-top:5px;
+  }
+  #ad-content article #coupon-image{
+  	background: url(images/rim-prize.jpg) no-repeat;
+  	background-size: 100px 100px;
+  	width: 100px;
+  	height: 100px;
+  	margin-left: 10px;
+  }
+  #ad-content article aside div{
+  	width: 50%;
+  	height: 50%;
+  }
+  #ad-content article h2{
+		font-size: 1.1em;
+		text-align: center;
+		line-height: 1.1em;
+	}
+	#ad-content article p{
+		margin: 0 0 0 0;
+		padding: 8px 0 0 0;
+	}
   #bottom-message h2{
   	text-align: center;
   	font-size: 1em;
   	line-height: 1.2em;
   }
+  #bottom-message h1{
+  	text-align: center;
+  	font-size: 1.2em;
+  	line-height: 1.2em;
+  	text-transform: uppercase;
+  	color: #fff;
+  }
+  	/* Button Styles */
+	button{
+		width: auto;
+		background: #2ba6cb;
+		border: 1px solid #1e728c;
+		border-radius: 2px;
+		color: #fff;
+		padding: 5px;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		float:right;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
 }
 
 

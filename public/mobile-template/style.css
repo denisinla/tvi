@@ -221,7 +221,15 @@ button{
 /* --------------------------- --------------------------- --------------------------- */
 /* --------------------------- MEDIA QUERIES ----------------------------------------  */
 /* --------------------------- --------------------------- --------------------------- */
-@media screen and (max-width: 768px){
+@media screen and(max-width: 960px){
+	#contest-image{
+		overflow: hidden;
+	}
+	.container, .inner{
+		width: 960px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 800px){
   nav .span0{
     width: 100%;
   	overflow:hidden;
@@ -237,10 +245,6 @@ button{
     margin-left: 0;
   }
 
-  #container, .inner{
-    width: 960px;
-    padding: 0 0 0 0;
-  }
   #dynamic-message h1{
   	font-size: 1.8em;
   	padding: 0 0 0 8px;
@@ -257,14 +261,16 @@ button{
   	padding: 5px 0 5px 0;
   }
   #ad-content article#image{
-  	width: 250px;
+  	width: 46%;
   	float: left;
   }
   #ad-content article#content{
   	padding-top: 0;
   	float: left;
-  	width: 455px;
-  	margin-top: 5em;
+  	width: 50%;
+  	margin-top: 0;
+  	margin-left: 0;
+  	height: 320px;
   }
   #ad-content article{
   	float: left;
@@ -273,23 +279,116 @@ button{
   }
   #ad-content article #coupon-image{
   	background: url(images/rim-prize.jpg) no-repeat;
-  	background-size: 250px 250px;
-  	width: 250px;
-  	height:250px;
+  	background-size: 320px 320px;
+  	width: 320px;
+  	height:320px;
   }
   #ad-content article aside div{
   	width: 50%;
   	height: 50%;
   }
   #ad-content article h2{
-		font-size: 1.5em;
+		font-size: 2em;
 		text-align: center;
 		line-height: 1.1em;
 	}
 	#ad-content article p{
 		margin: 0 0 0 0;
 		padding: 8px 0 0 0;
-		text-indent: 1.4em;
+		text-indent: 0;
+	}
+	#bottom-message h1{
+		color: #fff;
+		text-align: center;
+	}
+	#bottom-message h2{
+		text-align: center;
+	}
+	/* Button Styles */
+	button{
+		width: 90%;
+		background: #2ba6cb;
+		border: 1px solid #1e728c;
+		border-radius: 2px;
+		color: #fff;
+		padding: 10px;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		float:right;
+		margin-right: 10px;
+		margin-top: 80px;
+		float: right;
+		margin-bottom: 10px
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 640px){
+  nav ul li{
+    width: 100%;
+    margin: 0 0 5px 0;
+  }
+
+  nav a{
+    margin: 0;
+    padding: 14px 0 14px 0;
+  }
+  .span1, article{
+  	max-width: 100%;
+  	width: 768px;
+  }
+  #top-header{
+  	text-align: left;
+  	padding: 0;
+  }
+  #dynamic-message h1{
+  	font-size: 1.5em;
+  	padding: 0 0 0 0;
+  }
+  #contest-image{
+  	width: 768px;
+  	height: 480px;
+  	background-position: -100px 0;
+  }
+  #ad-content{
+  	height: auto;
+  	min-height: 250px;
+  	border-bottom:1px solid #ccc;
+  	padding: 5px 0 5px 0;
+  }
+  #ad-content article#image{
+  	width: 48%;
+  	float: left;
+  }
+  #ad-content article#content{
+  	padding-top: 0;
+  	float: left;
+  	width: 50%;
+  	margin-left: 0;
+  	margin-top: 2em;
+  }
+  #ad-content article{
+  	float: left;
+  	width: 320px;
+  	padding-top:5px;
+  }
+  #ad-content article #coupon-image{
+  	background: url(images/rim-prize.jpg) no-repeat;
+  	width: 50%;
+  	height:220px;
+  }
+  #ad-content article aside div{
+  	width: 50%;
+  	height: 50%;
+  }
+  #ad-content article h2{
+		font-size: 2em;
+		text-align: center;
+		line-height: 1.1em;
+	}
+	#ad-content article p{
+		margin: 0 0 0 0;
+		padding: 8px 0 0 0;
+		text-indent: 0;
+		font-size: 1.2em;
 	}
 	#bottom-message h1{
 		color: #fff;
@@ -308,14 +407,12 @@ button{
 		padding: 5px;
 		font-size: 1.2em;
 		text-transform: uppercase;
-		float:right;
 		margin-right: 10px;
-		margin-top: 100px;
+		margin-top: 50px;
 		float: right;
 		margin-bottom: 10px
 	}
 }
-
 @media screen and (max-width: 480px){
   nav ul li{
     width: 100%;
@@ -327,8 +424,11 @@ button{
     padding: 14px 0 14px 0;
   }
   .span1, article{
-    width: 480px;
-    overflow:hidden;
+  	width: 480px;
+  	overflow: hidden;
+  }
+  .container, .inner{
+  	width: 480px;
   }
   #top-header{
   	text-align: left;
@@ -339,7 +439,7 @@ button{
   	padding: 0 0 0 0;
   }
   #contest-image{
-  	width: 768px;
+  	width: 480px;
   	height: 480px;
   	background-position: -90px 0;
   }
@@ -409,7 +509,122 @@ button{
 		margin-bottom: 10px
 	}
 }
+@media screen and (min-width: 321px) and (max-width: 479px){
+	#dynamic-message h2{
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+	nav .span0{
+    width: 100%;
+  }
 
+  .span1, article{
+    width: 100%;
+    overflow:hidden;
+  }
+
+  .span0, aside{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #container, .inner{
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+  #top-header h2{
+  	text-align: center;
+  	font-size: 1.1em;
+  }
+  #dynamic-message{
+  	margin: 0 0 0 0;
+  	padding: 0 0 0 0;
+  }
+  #dynamic-message h1{
+  	text-align: center;
+  	font-size: 1.2em;
+  	width:auto;
+  	padding: 5px;
+  }
+  #contest-image{
+  	display:block;
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
+  }
+  #ad-content{
+  	height: auto;
+  	min-height: 200px;
+  	border-bottom:1px solid #ccc;
+  	padding: 5px 0 5px 0;
+  }
+  #ad-content article#image{
+  	width: 50%;
+  	float: left;
+  	padding: 0;
+  }
+  #ad-content article#content{
+  	padding-top: 0;
+  	float: left;
+  	width: 50%;
+  	margin-top: 0;
+  	margin-left: 0;
+  	height: 150px;
+  }
+  #ad-content article{
+  	float: left;
+  	width: 50%;
+  	padding-top:5px;
+  }
+  #ad-content article #coupon-image{
+  	background: url(images/rim-prize.jpg) no-repeat;
+  	background-size: 200px 200px;
+  	width: 200px;
+  	height: 200px;
+  	margin-left: 0;
+  }
+  #ad-content article aside div{
+  	width: 50%;
+  	height: 50%;
+  }
+  #ad-content article h2{
+		font-size: 1.2em;
+		text-align: center;
+		line-height: 1.3em;
+		text-transform: uppercase;
+	}
+	#ad-content article p{
+		margin: 0 0 0 0;
+		padding: 8px 0 0 0;
+		font-size: 0.875em;
+	}
+  #bottom-message h2{
+  	text-align: center;
+  	font-size: 1em;
+  	line-height: 1.2em;
+  }
+  #bottom-message h1{
+  	text-align: center;
+  	font-size: 1.2em;
+  	line-height: 1.2em;
+  	text-transform: uppercase;
+  	color: #fff;
+  }
+  	/* Button Styles */
+	button{
+		width: 95%;
+		background: #2ba6cb;
+		border: 1px solid #1e728c;
+		border-radius: 2px;
+		color: #fff;
+		padding: 10px;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		float:left;
+		margin-top: 10px;
+	}
+}
 @media screen and (max-width: 320px) {
 	#dynamic-message h2{
 		text-align: center;
@@ -464,15 +679,17 @@ button{
   	padding: 5px 0 5px 0;
   }
   #ad-content article#image{
-  	width: 100px;
+  	width: 50%;
   	float: left;
+  	padding: 0;
   }
   #ad-content article#content{
   	padding-top: 0;
   	float: left;
-  	width: 200px;
-  	margin-top: 1em;
-  	margin-left: 1em;
+  	width: 50%;
+  	margin-top: 0;
+  	margin-left: 0;
+  	height: 150px;
   }
   #ad-content article{
   	float: left;
@@ -481,9 +698,9 @@ button{
   }
   #ad-content article #coupon-image{
   	background: url(images/rim-prize.jpg) no-repeat;
-  	background-size: 100px 100px;
-  	width: 100px;
-  	height: 100px;
+  	background-size: 150px 150px;
+  	width: 150px;
+  	height: 150px;
   	margin-left: 0;
   }
   #ad-content article aside div{
@@ -491,13 +708,15 @@ button{
   	height: 50%;
   }
   #ad-content article h2{
-		font-size: 1.1em;
+		font-size: 0.875em;
 		text-align: center;
-		line-height: 1.1em;
+		line-height: 1.3em;
+		text-transform: uppercase;
 	}
 	#ad-content article p{
 		margin: 0 0 0 0;
 		padding: 8px 0 0 0;
+		font-size: 0.875em;
 	}
   #bottom-message h2{
   	text-align: center;
@@ -513,16 +732,15 @@ button{
   }
   	/* Button Styles */
 	button{
-		width: auto;
+		width: 95%;
 		background: #2ba6cb;
 		border: 1px solid #1e728c;
 		border-radius: 2px;
 		color: #fff;
-		padding: 5px;
+		padding: 10px;
 		font-size: 0.9em;
 		text-transform: uppercase;
-		float:right;
-		margin-right: 10px;
+		float:left;
 		margin-top: 10px;
 	}
 }
@@ -545,5 +763,3 @@ button{
 .cf {
     *zoom:1;
 }
-
-

@@ -1,0 +1,507 @@
+
+
+/* Columns: 1, Gutter Width: 1.5, Breakpoints:  */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body
+{
+    margin: 0 auto;
+    width: 960px;
+    font-family: 'Helvetica Neue' ,Helvetica,Arial,sans-serif;
+}
+
+div
+{
+    float: left;
+}
+
+.wrapper
+{
+
+    width: 100%;
+}
+
+#header, #footer
+{
+    width: 100%;
+    height: 95px;
+}
+
+#headline, #footline
+{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 34px;
+}
+#GridView1 th
+{
+    margin: 0;
+    padding: 0;
+}
+
+#Counter
+{
+    width: 100%;
+    text-align: center;
+}
+
+#ctop
+{
+    width: 100%;
+    padding: 5px 0 2px 0;
+    font-size: 28px;
+}
+
+#cmiddle
+{
+    width: 100%;
+    padding: 3px 0 2px 0;
+    font-size: 34px;
+}
+
+#cbottom
+{
+    width: 100%;
+    padding: 3px 0 5px 0;
+    font-size: 35px;
+}
+
+.coupon-image img
+{
+    width: 320px;
+    height: 320px;
+}
+.content
+{
+    width: 620px;
+    padding-left: 20px;
+}
+.ad-content
+{
+    border-bottom: 1px solid #CCCCCC;
+    height: 320px;
+    min-height: 320px;
+    padding: 5px 0;
+}
+.content h2
+{
+    font-size: 35px;
+    line-height: 30px;
+}
+
+.content p
+{
+    font-size: 25px;
+    margin: 0;
+    padding: 8px 0 0;
+}
+
+
+.content button
+{
+    background: none repeat scroll 0 0 #2BA6CB;
+    border: 1px solid #1E728C;
+    border-radius: 2px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    bottom: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+
+
+
+@media only screen and (max-width: 1279px)
+{
+    .wrapper
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1105px)
+{
+    .wrapper
+    {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 970px)
+{
+    body
+    {
+        width: 970px;
+    }
+
+    .wrapper
+    {
+        width: 970px;
+    }
+
+    .coupon-image img
+    {
+        width: 250px;
+        height: 250px;
+    }
+    .content
+    {
+        width: 708px;
+        padding-left: 10px;
+    }
+
+    .ad-content
+    {
+        border-bottom: 1px solid #CCCCCC;
+        height: 250px;
+        min-height: 250px;
+        padding: 2px 0;
+    }
+
+    .content h2
+    {
+        padding-top:5px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .content p
+    {
+        font-size: 20px;
+        margin: 0;
+        padding: 5px 0 0;
+    }
+    .content button
+    {
+        background: none repeat scroll 0 0 #2BA6CB;
+        border: 1px solid #1E728C;
+        border-radius: 2px;
+        color: #FFFFFF;
+        float: right;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        bottom: 0;
+        padding: 5px;
+        text-transform: uppercase;
+        width: auto;
+    }
+    #header, #footer
+    {
+        width: 970px;
+        height: 95px;
+    }
+
+    #headline, #footline
+    {
+        width: 970px;
+        height: 50px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 34px;
+    }
+    #Counter
+    {
+        width: 970px;
+        text-align: center;
+    }
+
+    #ctop
+    {
+        width: 970px;
+        padding: 5px 0 2px 0;
+        font-size: 28px;
+    }
+
+    #cmiddle
+    {
+        width: 970px;
+        padding: 3px 0 2px 0;
+        font-size: 34px;
+    }
+
+    #cbottom
+    {
+        width: 970px;
+        padding: 3px 0 5px 0;
+        font-size: 35px;
+    }
+}
+
+
+
+@media only screen and (max-width: 860px)
+{
+    .wrapper
+    {
+        width: 860px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    body
+    {
+        width: 768px;
+    }
+
+    .wrapper
+    {
+        width: 768px;
+    }
+
+    .coupon-image img
+    {
+        width: 250px;
+        height: 250px;
+    }
+    .content
+    {
+        width: 508px;
+        padding-left: 10px;
+    }
+
+    .ad-content
+    {
+        border-bottom: 1px solid #CCCCCC;
+        height: 250px;
+        min-height: 250px;
+        padding: 2px 0;
+    }
+
+    .content h2
+    {
+        padding-top:5px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .content p
+    {
+        font-size: 20px;
+        margin: 0;
+        padding: 5px 0 0;
+    }
+    .content button
+    {
+        background: none repeat scroll 0 0 #2BA6CB;
+        border: 1px solid #1E728C;
+        border-radius: 2px;
+        color: #FFFFFF;
+        float: right;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        bottom: 0;
+        padding: 5px;
+        text-transform: uppercase;
+        width: auto;
+    }
+    #header, #footer
+    {
+        width: 768px;
+        height: 95px;
+    }
+
+    #headline, #footline
+    {
+        width: 768px;
+        height: 50px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 34px;
+    }
+    #Counter
+    {
+        width: 768px;
+        text-align: center;
+    }
+
+    #ctop
+    {
+        width: 768px;
+        padding: 5px 0 2px 0;
+        font-size: 28px;
+    }
+
+    #cmiddle
+    {
+        width: 768px;
+        padding: 3px 0 2px 0;
+        font-size: 34px;
+    }
+
+    #cbottom
+    {
+        width: 768px;
+        padding: 3px 0 5px 0;
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 510px)
+{
+    .wrapper
+    {
+        width: 510px;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .wrapper
+    {
+        width: 480px;
+    }
+    #Counter{
+    	width: 480px;
+    }
+    #ctop, #cmiddle, #cbottom{
+    	width: 480px;
+    }
+    #headline, #footline{
+    	width: 480px;
+    	height: auto;
+    }
+    .ad-content{
+    	height: auto;
+    	min-height:220px;
+    	padding: 0 0;
+    }
+    .coupon-image img {
+			width: 220px;
+			height: 220px;
+		}
+		.content{
+			width: 260px;
+		}
+		.content button{
+			margin-top: 20px;
+			margin-right: 20px;
+		}
+}
+
+@media only screen and (max-width: 320px)
+{
+    body
+    {
+        width: 320px;
+    }
+
+    .wrapper
+    {
+        width: 320px;
+    }
+
+    .coupon-image img
+    {
+        width: 120px;
+        height: 120px;
+    }
+    .content
+    {
+        width: 180px;
+        padding-left: 10px;
+    }
+
+    .ad-content
+    {
+        border-bottom: 1px solid #CCCCCC;
+        height: 120px;
+        min-height: 120px;
+        padding: 2px 0;
+    }
+
+    .content h2
+    {
+        padding-top:5px;
+        font-size: 18px;
+        line-height: 15px;
+    }
+
+    .content p
+    {
+        font-size: 14px;
+        margin: 0;
+        padding: 2px 0 0;
+    }
+    .content button
+    {
+        background: none repeat scroll 0 0 #2BA6CB;
+        border: 1px solid #1E728C;
+        border-radius: 2px;
+        color: #FFFFFF;
+        float: right;
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        bottom: 0;
+        padding: 2px;
+        text-transform: uppercase;
+        width: auto;
+    }
+    #header, #footer
+    {
+        width: 320px;
+        height: 95px;
+    }
+
+    #headline, #footline
+    {
+        width: 320px;
+        height: 50px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 34px;
+        height: auto;
+    }
+    #Counter
+    {
+        width: 320px;
+        text-align: center;
+    }
+
+    #ctop
+    {
+        width: 320px;
+        padding: 5px 0 2px 0;
+        font-size: 28px;
+    }
+
+    #cmiddle
+    {
+        width: 320px;
+        padding: 3px 0 2px 0;
+        font-size: 34px;
+    }
+
+    #cbottom
+    {
+        width: 320px;
+        padding: 3px 0 5px 0;
+        font-size: 35px;
+    }
+
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)http://www.8005555555.com/newpublisher/Ad.aspx?msg=208&pub=200000012&w=Loser -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="./index_files/style.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./index_files/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#clID").val(getParameterByName('pub'));
+            $("#pubsite").val(getParameterByName('w'));
+            var new_msg = getParameterByName('msg');
+            if (new_msg) {
+                $.ajax({
+                    type: "POST",
+                    url: "http://www.8005555555.com/newpublisher/AdTracking.asmx/GetPhoneFromMessage",
+                    // data: { messageID: '" + getParameterByName(msg) + "' },
+                    data: { messageID: new_msg },
+                    success: function (msg) {
+                        $("#phNo").val(msg.childNodes[0].textContent);
+
+                    },
+                    error: function (e) {
+                        alert(e);
+                    }
+                });
+            }
+            //alert("hi");
+        });
+
+        function trackAndRedirect(obj, lnk) {
+            var divToBeWorkedOn = "#res";
+            var webMethod = "http://www.8005555555.com/newpublisher/AdTracking.asmx/GetTracking";
+            var parameters = "{clientID:'" + $("#clID").val() + "',CampaignID:'" + obj.id + "',PhoneNumber:'" + $("#phNo").val() + "',pubsite:'" + $("#pubsite").val() + "'}";
+            var cid = obj.id;
+            cid = cid.replace("cl", "");
+            $.ajax({
+                type: "POST",
+                url: webMethod,
+                data: { clientID: $("#clID").val(), CampaignID: cid, PhoneNumber: $("#phNo").val(), pubsite: $("#pubsite").val() },
+                success: function (msg) {
+                    window.location.href = lnk;
+                },
+                error: function (e) {
+                    //alert(e);
+                }
+            });
+        }
+
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\?&]" + name + "=([^&#]*)",
+      regex = new RegExp(regexS),
+      results = regex.exec(window.location.href);
+            if (results == null) {
+                return "";
+            } else {
+                return decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+        }
+
+    </script>
+<link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script></head>
+<body id="mainbody" class="inner cf" style="background-color: rgb(255, 255, 255); zoom: 1; background-position: initial initial; background-repeat: initial initial;" screen_capture_injected="true">
+<div id="wrapper">
+    <form method="post" action="./index_files/index.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA0MzQ3NTQ5OA9kFgICAQ8WAh4Fc3R5bGUFE2JhY2tncm91bmQ6ICNGRkZGRkYWAgIBD2QWDgIBDxYCHwAFbWNvbG9yOiNmZmY7YmFja2dyb3VuZDogd2hpdGUgdXJsKGh0dHA6Ly93d3cuODAwNTU1NTU1NS5jb20vdGhlbWVzL2RlZmF1bHQvbG9nby84X0xvc2VyX2hlYWRlci5qcGcpIG5vLXJlcGVhdDtkAgMPFgQfAAUmYmFja2dyb3VuZC1jb2xvcjojMDAwMDMzO2NvbG9yOiNGRkZGRkYeCWlubmVyaHRtbAUlVGhpcyBpcyBSeWFuIFNlYWNyZXN0IHBhZ2UgZm9yIGxvc2Vyc2QCBQ8WAh4HVmlzaWJsZWhkAgcPFgIfAAUmZGlzcGxheTpibG9jaztiYWNrZ3JvdW5kLWNvbG9yOiM5OTMzMDAWBgIBDxYEHwAFHGZvbnQtc2l6ZToyMHB4O2NvbG9yOiNjY2NjY2MfAQUZPGI+Q29uZ3JhdHVsYXRpb25zISEhPC9iPmQCAw8WBB8ABQ1jb2xvcjojY2NjY2NjHwEFITxiPllPVSBBUkUgQ0FMTEVSIE5VTUJFUiMgMTAwPC9iPmQCBQ8WBB8ABQ1jb2xvcjojY2NjY2NjHwEFETxiPllvdSB3aW4hISE8L2I+ZAIJDzwrABECAA8WBB4LXyFEYXRhQm91bmRnHgtfIUl0ZW1Db3VudAICZAEQFgAWABYAFgJmD2QWCGYPDxYCHwJoZGQCAQ9kFgJmD2QWAgIBD2QWAmYPFQYUaHR0cDovL05haW1lc2gxNy5jb20CMTdRaHR0cDovL2ltYWdlcy50aGV2b2ljZWludGVybmV0LmNvbS81MDAwMDIwMTEvY2E5YWYxMmQ3ZTI2NDA1YzkxMjVhY2NmNTBmZmJkOWYuanBnF1JlZ2lzdGVyIHlvdXIgVHJhZGVtYXJrD0Zhc3QgYW5kIGVhc3khIQhSZWdpc3RlcmQCAg9kFgJmD2QWAgIBD2QWAmYPFQYUaHR0cDovL05haW1lc2gxMC5jb20CMTVRaHR0cDovL2ltYWdlcy50aGV2b2ljZWludGVybmV0LmNvbS81MDAwMDIwMTEvNTU4MzQxN2I2ZTdmNDc2ZmE3ZTQ1ZGI2YjVhYWIyY2MuanBnF1NoaXAgQm91cXVldCBhbnl3aGVyZSEhEUZhc3QgYW5kIHJlbGlhYmxlDFNlbmQgQm91cXVldGQCAw8PFgIfAmhkZAILDxYEHwAFJmJhY2tncm91bmQtY29sb3I6I0ZGRkZDQztjb2xvcjojOTkwMENDHwEFDlRoaXMgaXMgRm9vdGVyZAINDxYCHwAFbWNvbG9yOiNmZmY7YmFja2dyb3VuZDogd2hpdGUgdXJsKGh0dHA6Ly93d3cuODAwNTU1NTU1NS5jb20vdGhlbWVzL2RlZmF1bHQvbG9nby84X0xvc2VyX2Zvb3Rlci5wbmcpIG5vLXJlcGVhdDtkGAEFCUdyaWRWaWV3MQ88KwAMAQgCAWTj45NE8S3O1hy3sHUyuB32ylSYgObJzYKi3ixkVJ5dOg==">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKpuOSbDgLE+/OuCQKq7erhAQK6sq7XCBwNf8QvQ8kBTDiB9+56+KIRvWLWcgDWTOtbm3LcBU8h">
+</div>
+    <div id="header" style="color:#fff;background: white url(http://www.8005555555.com/themes/default/logo/8_Loser_header.jpg) no-repeat;">
+    </div>
+    <div id="headline" style="background-color:#000033;color:#FFFFFF">This is Ryan Seacrest page for losers</div>
+
+    <div id="Counter" style="display:block;background-color:#993300">
+        <div id="ctop" style="font-size:20px;color:#cccccc"><b>Congratulations!!!</b></div>
+        <div id="cmiddle" style="color:#cccccc"><b>YOU ARE CALLER NUMBER# 100</b></div>
+        <div id="cbottom" style="color:#cccccc"><b>You win!!!</b></div>
+    </div>
+    <div id="GridView1">
+                    <div id="GridView1_adDiv_0">
+                        <div onclick="trackAndRedirect(this,&#39;http://Naimesh17.com&#39;)" id="cl17" class="ad-content">
+                            <div class="image">
+                                <div class="coupon-image"><img src="./index_files/ca9af12d7e26405c9125accf50ffbd9f.jpg"></div>
+                            </div>
+                            <div class="content">
+                                <h2>
+                                    Register your Trademark</h2>
+                                <p>
+                                    Fast and easy!!</p>
+                                <button>
+                                    Register</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="GridView1_adDiv_1">
+                        <div onclick="trackAndRedirect(this,&#39;http://Naimesh10.com&#39;)" id="cl15" class="ad-content">
+                            <div class="image">
+                                <div class="coupon-image"><img src="./index_files/5583417b6e7f476fa7e45db6b5aab2cc.jpg"></div>
+                            </div>
+                            <div class="content">
+                                <h2>
+                                    Ship Bouquet anywhere!!</h2>
+                                <p>
+                                    Fast and reliable</p>
+                                <button>
+                                    Send Bouquet</button>
+                            </div>
+                        </div>
+                    </div>
+</div>
+    <div id="footline" style="background-color:#FFFFCC;color:#9900CC">This is Footer</div>
+    <div id="footer" style="color:#fff;background: white url(http://www.8005555555.com/themes/default/logo/8_Loser_footer.png) no-repeat;">
+    </div>
+    <div id="res">
+    </div>
+    <input type="hidden" name="phNo" id="phNo" value="2485351516">
+    <input type="hidden" name="clID" id="clID" value="200000012">
+    <input type="hidden" name="pubsite" id="pubsite" value="Loser">
+    </form>
+    </div>
+
+
+</body></html>

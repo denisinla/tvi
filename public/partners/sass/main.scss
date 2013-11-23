@@ -1,0 +1,21 @@
+/* Overrides */
+
+.row{
+	max-width:100%;
+}
+.column, .columns{
+	padding-left:0;
+	padding-right:0;
+}
+.header{
+	background: #354A5F;
+}
+h1{
+	.logo{
+		background: #47B89A;
+		width: 10%;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding:10px;
+	}
+}

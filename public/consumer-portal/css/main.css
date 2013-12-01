@@ -1,0 +1,52 @@
+/* Overrides */
+/* MixIns */
+body {
+  background: #fafafa; }
+
+.row {
+  max-width: 100%; }
+  .row .row {
+    margin-left: 0;
+    margin-right: 0; }
+
+.column, .columns {
+  padding-left: 0;
+  padding-right: 0; }
+
+header {
+  background: #e67e22;
+  margin: 0;
+  padding: 0;
+  height: 6.5em;
+  border-bottom: 10px solid #d35400; }
+  header .logo {
+    display: block;
+    width: 69px;
+    height: 60px;
+    float: left;
+    margin: 10px 0 0 170px; }
+  header h1 {
+    font: 1.5em "Lato", sans-serif;
+    font-weight: 100;
+    color: #fff;
+    padding: 1em 0 0 12em;
+    margin: 0; }
+
+.columns.small-centered {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px #eeeeee;
+  -moz-box-shadow: 0px 0px 5px 0px #eeeeee;
+  box-shadow: 0px 0px 5px 0px #eeeeee;
+  border-right: 1px solid #f9f9f9;
+  padding: 0; }
+  .columns.small-centered h1 {
+    padding: 0;
+    margin: 0; }
+
+footer {
+  background: #ecf0f1; }
+  footer p {
+    color: #95a5a6;
+    text-align: center; }
+
+/* Media Overrides */

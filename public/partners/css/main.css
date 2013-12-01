@@ -1,0 +1,38 @@
+/* Overrides */
+.row {
+  max-width: 100%; }
+  .row .row {
+    margin-left: 0;
+    margin-right: 0; }
+
+.column, .columns {
+  padding-left: 0;
+  padding-right: 0; }
+
+.header {
+  background: #354A5F; }
+
+.logo {
+  background: #47B89A;
+  width: 5em;
+  max-width: 5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center; }
+
+footer {
+  background: #ecf0f1; }
+  footer p {
+    color: #95a5a6;
+    text-align: center; }
+
+/* Media Overrides */
+@media only screen and (min-width: 40.063em) {
+  .logo {
+    font-size: 2.75rem;
+    width: 20%; } }

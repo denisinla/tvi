@@ -1,7 +1,13 @@
 /* Overrides */
+$lato-normal: 'Lato',sans-serif;
+$source-sans-pro: 'Source Sans Pro', sans-serif;
 
 .row{
 	max-width:100%;
+	.row{
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 .column, .columns{
 	padding-left:0;
@@ -10,12 +16,30 @@
 .header{
 	background: #354A5F;
 }
-h1{
+.logo{
+	background: #47B89A;
+	width: 5em;
+	max-width:5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding:10px;
+	color: #fff;
+	font-family: $lato-normal;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+footer{
+	background: #ecf0f1;
+	p{
+		color: #95a5a6;
+		text-align: center;
+	}
+}
+/* Media Overrides */
+@media only screen and (min-width: 40.063em){
 	.logo{
-		background: #47B89A;
-		width: 10%;
-		margin-top: 0;
-		margin-bottom: 0;
-		padding:10px;
+		font-size: 2.75rem;
+		width: 20%;
 	}
 }

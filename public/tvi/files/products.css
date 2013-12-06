@@ -1,0 +1,317 @@
+/***** product elements *****/
+/* --- ( products ) -------------*/
+.product-preview{
+	width: 590px;
+	border-bottom: solid #ddd 1px;
+	margin: 0 0 15px 0;
+}
+.product-preview .banner {
+	width: 158px;
+	float:left;
+	/*margin: 0 8px 0 0;*/
+	/*border: solid #ddd 1px;*/
+}
+.product-preview .content {
+	width: 412px;
+	margin: 0 0 10px 168px;
+}
+.product-preview .content p{
+	font-size: 90%;
+	margin: 0 0 10px 0;
+}
+.product-preview .content .features {
+  margin: 0 0 10px 0;
+}
+.product-preview .content .features li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  font-size: 90%;
+  font-weight:bold;
+  color: #FC6706;
+}
+.product-preview .content .features li a {
+  display: block;
+  width: 7.8em;
+  color: #000;
+  position: relative; /* for IE-Win */
+}
+.product-preview .content .features .col1 {margin-left: 3em;}
+.product-preview .content .features .col2 {margin-left: 21em;}
+.product-preview .content .features .coltop {margin-top: -4.5em;} 
+
+/***** product page intro elements *****/
+.product-intro{
+	width: 740px;
+	margin: 10px 0;
+	background: url(/_css/_img/container_bg_230.gif) repeat-y right;
+}
+.product-intro .content {
+	float:left;
+	width: 499px;
+	padding: 5px 5px 0 0;
+	margin: 0 5px 0 0;
+	/*border-right: 1px solid #a9a9a9;*/
+}
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html .product-intro .content {margin: 0 2px 0 0;}
+/* End hide from IE5/mac */
+.product-intro .content  p{
+	margin: 0.4em 10px 0.6em 10px;
+	line-height: 1.3em;
+	/*font-size: 90%;*/
+}
+/* commented out 02/27/2006
+.product-intro .content ul {
+  margin: 10px 0 0 10px !important;
+}
+.product-intro .content ul li {
+  line-height: 1.5em;
+	font-size: 90%;
+}
+*/
+.product-intro .nav-options {
+	width: 206px;
+	padding: 12px;
+	float:right;
+}
+.product-intro .nav-options #header{
+	background: url(/_css/_img/options_top.gif) no-repeat;
+	line-height: 6px;
+}
+.product-intro .nav-options #content{
+	border: solid 1px #a9a9a9;
+	border-top: none;
+	border-bottom: none;
+}
+.product-intro .nav-options #footer{
+	background: url(/_css/_img/options_bottom.gif) no-repeat;
+	line-height: 6px;
+}
+.product-intro .nav-options ul,
+.product-intro .nav-options ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/***** product page feature elements *****/
+.blurb-productFeature {
+	padding: 0 0 5px 0;
+	margin: 5px 5px 10px 10px;
+	border-bottom: 1px solid #a9a9a9;
+} 
+.blurb-productFeature .header{
+	margin: 0  0 5px 0;
+}
+.blurb-productFeature .detail{
+	border: none;
+}
+.blurb-productFeature .detail p{
+	margin: 0 0 10px 0;
+}
+.blurb-productFeature .detail img{
+	margin: 5px;
+}
+.blurb-productFeature .detail .nav-linkbar li{
+	list-style: none;
+	float:right;
+	margin: 0 5px;
+}
+.feature-list{
+	width: 738px;
+	border: 1px solid #a9a9a9;
+	background: #F4F8F9;
+}
+.feature-list .list-header{
+	border-bottom: 1px solid #a9a9a9;
+	background: #a9a9a9;
+}
+.feature{
+	width: 738px;
+	margin: 0 0 5px 0;
+}
+.feature .header{
+	border: 1px solid #a9a9a9;
+	border-left: none;
+	border-right: none;
+	background: #fff;
+}
+.feature .content {
+	float:left;
+	width: 482px;
+	padding: 5px 5px 10px 10px;
+	margin: 0 5px 0 0;
+}
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html .feature .content {margin: 0 2px 0 0;}
+/* End hide from IE5/mac */
+.feature .content  p{
+	font-size: 90%;
+}
+.feature .content ul {
+  margin-top: 10px;
+}
+.feature .content ul li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  font-size: 90%;
+}
+.feature .content ul li a {
+  display: block;
+  width: 7.8em;
+  color: #000;
+  position: relative; /* for IE-Win */
+}
+.feature .image {
+	text-align: right;
+	margin: 5px;
+}
+
+/**** begin new feature css ****/
+.container-featuresBenefits{
+	margin: 1.5em 10px 0.5em 10px;
+}
+* html .container-featuresBenefits{margin-right: -3px;}
+.container-featuresBenefits .features,
+.container-featuresBenefits .benefits{
+	width: 229px;
+	margin: 0 10px 0 0;
+}
+.container-featuresBenefits .features,
+.container-featuresBenefits .benefits{
+	float:left;
+}
+.container-featuresBenefits .features h1,
+.container-featuresBenefits .benefits h1{
+	background: #f2f2f2;
+	color: #666;
+	margin: 0;
+	padding: 2px 5px;
+	font-size: 90%;
+	border-bottom: 1px solid #E7E7E7;
+}
+.container-featuresBenefits .features ul,
+.container-featuresBenefits .features ol,
+.container-featuresBenefits .benefits ul,
+.container-featuresBenefits .benefits ol{
+	margin: 5px 5px 0.5em 0 !important;
+	padding: 0 0 0 25px !important;
+	font-size: 90%;
+	list-style-type:circle;
+}
+.container-featuresBenefits .features ul li,
+.container-featuresBenefits .benefits ul li{
+	line-height: 1.8em;
+}
+.container-featuresBenefits a{
+	color: #333;
+	font-weight: bold;
+	text-decoration:none;
+}
+.container-featuresBenefits a:hover{
+	color: #000;
+	text-decoration:underline;
+}
+/* features listing */
+.featuresTable{
+	border: 1px solid #a9a9a9;
+	margin: 0 0 10px 0;
+}
+.featuresTable thead {
+	background: #F6F6F6 url(/_IMG/services/gradient_bar.gif) repeat-x bottom left;
+	color:#3E3E3E;
+	font-size: 90%;
+	font-weight:bold;
+	line-height: 24px;
+}
+.featuresTable tr td{border-bottom: 1px solid #a9a9a9;}
+.featuresTable thead tr td{padding: 0 0 0 10px;}
+.featuresTable .detail{
+	background: #fbfbfb;
+	border-right: #a9a9a9 1px solid;
+	vertical-align:top;
+}
+.featuresTable .detail h1{
+	font-size: 80%;
+	margin: 5px 10px;
+}
+.featuresTable .detail p{
+	/*font-size: 90%;*/
+	margin: 15px;
+}
+.featuresTable .detail ul {
+	/*margin: 0.5em 20px 1.5em 0 !important;*/
+	/*font-size: 80% !important;*/
+	list-style-type:square;
+}
+* html .featuresTable .detail ul {padding-left: 40px !important;}
+.featuresTable .detail ul li {
+  line-height: 1.6em;
+}
+.featuresTable .image{
+	width: 228px;
+	vertical-align:top;
+}
+/* plan module */
+
+.module-header{
+	background: url(/_css/_img/module_header.gif) top repeat-y;
+	line-height: 6px;
+}
+.module-main{
+	background: url(/_css/_img/module_main.gif) bottom;
+	margin: 0 0 5px 0;
+}
+.module-main .icon{
+	float:left;
+	width: 90px;
+	margin: 0 0 0 1px;
+	padding: 0 5px 5px 5px;
+}
+.module-main .content{
+	float:left;
+	width: 296px;
+	padding: 0 5px 5px 5px;
+}
+.module-main .content h1{
+	margin: 0;
+	font-size: 90%;
+	color: #61A0CA;
+}
+.module-main .content .details{
+	margin: 5px;
+	text-align: right;
+	font-size: 80%;
+	font-weight: bold;
+}
+.module-main .content .details a{text-decoration:underline;}
+.module-main .content .details a:hover{text-decoration:underline;}
+/* plan css IDs*/
+.module-main .content h1#TRIAL{color: #46AFB1;}
+.module-main .content h1#BASIC{color: #7A9550;}
+.module-main .content h1#PROFESSIONAL{color: #FE972D;}
+.module-main .content h1#PREMIUM{color: #61A0CA;}
+.module-main .content h1#ENTERPRISE{color: #D87DBC;}
+.module-main .content p{
+	margin: 0;
+	font-size: 90%;
+}
+
+.planInfo
+{
+	background:none repeat scroll 0 0 #DDEFFC;
+	border:0 solid #CCCCCC;
+	font-size:11px;
+	line-height:1.5em;
+	margin:0.5em 0;
+	padding:0.5em 1em;
+}
+.planInfo p
+{
+	font-size: 100%; 
+	margin: 0.5em !important;
+	line-height: 1.5em !important;
+}
+/**** end new features css ****/

@@ -1,0 +1,259 @@
+textarea { 
+	/* extend maxlength property/behavior to textarea (IE only) */
+	behavior: url(/_behaviors/maxlength.htc);
+}
+textarea, input{
+	font-family: Verdana, sans-serif;
+  	font-size: small;
+}
+.form{
+	width: 100%;
+	margin: 10px 0;
+	font-size: 90%;
+}
+.form td{
+	padding: 0 0 5px 0;
+	vertical-align: bottom;
+}
+.form .label{
+	padding: 0 8px 5px 0;
+	width:38%;
+	text-align:right;
+	vertical-align:top;
+	color: #333;
+}
+.form .label a{
+	color: #111;
+}
+.form .required{
+	font-weight:bold;
+}
+.form .submit input{
+	text-align: center;
+}
+.form .required:before {
+    content: "*"; 
+}
+.form .field {
+	width:62%;
+}
+.form .data {
+	width:65%;
+	font-size: 90%;
+}
+
+.form td input,
+.form td textarea,
+.form td select{
+	font-size:100%;
+	text-align:left;
+}
+.form td.field input,
+/*.form td.field select,*/
+.form td.field textarea{
+	width:85%;
+}
+.form td textarea{
+	height:100px;
+}
+.form td.left{
+	text-align: left;
+}
+.form td.right{
+	text-align: right !important;
+	padding-right: 10px;
+}
+.form a{
+	color: #398AC2 !important;
+}
+.form a:hover{
+	color: #18537B !important;
+}
+.formHeader{
+	font-weight: bold;
+	color: #398AC2;
+	border-bottom: 1px solid #dadada;
+	margin: .2em 0 .5em 0;
+	padding: 3px;
+}
+.inputGroup,
+.inputGroup input{
+	/* fix checkbox widths */
+	width: auto !important;
+}
+input[type=checkbox],
+input[type=radio],
+input[type=image]{
+	/* fix checkbox widths */
+	width: auto !important;
+}
+.errorSummary{
+	font-size: 90%;
+	font-weight: bold;
+	color: #ed1c24;
+	margin: 0 0 10px 0;
+	padding: 8px 0 10px 60px;
+	border: dashed 1px #dadada;
+	background: #f7f7f7 url(/_IMG/icons/warning_red.gif) no-repeat 10px 10px;
+}
+.errorSummary ul{
+	margin: 5px 0 10px 0;
+	padding-left: 45px;
+	font-weight: normal;
+}
+.errorSummary ul li{
+	color: #333333;
+	margin: 5px 0 0 -10px;
+	/*list-style-image:url(/_IMG/icons/error_arrow_gray.gif)*/
+}
+.updateSummary{
+	font-size: 90%;
+	font-weight: bold;
+	color: #7EB6DB;
+	margin: 0 0 10px 0;
+	padding: 8px 0 10px 60px;
+	border: dashed 1px #dadada;
+	background: #f7f7f7 url(/_IMG/icons/warning_blue.gif) no-repeat 10px 10px;
+}
+.updateSummary ul{
+	margin: 5px 0 10px 0;
+	padding-left: 45px;
+	font-weight: normal;
+}
+.updateSummary ul li{
+	color: #333333;
+	margin: 5px 0 0 -10px;
+	/*list-style-image:url(/_IMG/icons/error_arrow_gray.gif)*/
+}
+.formActions{
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+	background-color: #F5F5F5;
+	border: 1px solid #ddd;
+	width: 99.5%;
+}
+.formActions li{
+	float:right;
+	margin: 6px 2px;
+}
+.formActions .message{
+	float:left;
+	font-size: 80%;
+}
+.updateBtn,
+.formActions .update input{
+	padding: 2px 0;
+	font-size: 90%;
+	font-weight:bold;
+	cursor:pointer;
+	text-align: center !important;
+	text-decoration: none;
+	color: #4F698B;
+	background: #DBE8F2 url(/_css/_img/btn_bg_test02.gif) repeat-x;
+	border: 3px double;
+	border-color: #CDCDCD #B4B4B4 #767676 #B4B4B4;
+}
+.updateBtn:hover,
+.updateBtn:focus,
+.formActions .update input:hover,
+.formActions .update input:focus {
+	border: 3px double;
+	border-color: #89B1E2 #5D81B0 #042756 #5D81B0;
+}
+.cancelBtn,
+.formActions .cancel a,
+.formActions .cancel input{
+	color: #737373;
+	padding: 2px 0;
+	font-size: 90%;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration: none;
+	background: #fefefe url(/_css/_img/btn_bg_test.gif) repeat-x;
+	border: 3px double;
+	border-color: #CCC #BBB #999 #BBB;
+}
+.cancelBtn:hover,
+.cancelBtn:focus,
+.formActions .cancel input:hover,
+.formActions .cancel input:focus {
+	border: 3px double;
+	border-color: #AAA #999 #777 #999;
+}
+.formActions .cancel a{
+	padding: 1px 3px;
+}
+/* formOptions list */
+.formOptions{
+	float:left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.formOptions li{
+	float:left;
+	margin: 2px 1px;
+}
+.formOptions li input{
+	color: #444;
+	font-size: 90%;
+	text-align: center;
+	text-decoration:none;
+	cursor:pointer;
+	background: #fefefe url(/_css/_img/btn_bg_test.gif) repeat-x;
+	border: 3px double;
+	border-color: #CCC #BBB #999 #BBB;
+}
+.formOptions li input:hover,
+.formOptions li input:focus{
+	border: 3px double;
+	border-color: #AAA #999 #777 #999;
+}
+/* OLD STYLES */
+/*
+.cancelBtn,
+.formActions .cancel a,
+.formActions .cancel input,
+.updateBtn,
+.formActions .update a,
+.formActions .update input{
+	border: 1px solid #7D7D7D;
+	color: #737373;
+	background: #DBDBDB;
+	padding: 2px 0;
+	font-size: 90%;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration: none;
+}
+*/
+/*
+.formActions .update a,
+.formActions .update input,
+.updateBtn{
+	border: 1px solid #7C91A0;
+	color: #4F698B;
+	background: #CADDED;
+}
+*/
+/**** new button style option *****/
+/*
+.genericBtn ,
+.removeBtn {
+	border: 1px solid #C0C0C0;
+	color: #6B6B6B;
+	background: #FAFAFA;
+	padding: 0;
+	font-size: 90%;
+	text-decoration: none;
+	cursor:pointer;
+	margin: 2px;
+}
+.genericBtn:hover ,
+.removeBtn:hover{
+	color: #fff;
+	background: #9E9E9E;
+}
+*/

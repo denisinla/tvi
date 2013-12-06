@@ -1,0 +1,388 @@
+/* ----- (begin global nav) ----- */
+.nav-global-wrapper{
+	margin: 0;
+	background: #fff;
+}
+.nav-global-wrapper .main{
+	width: 760px;
+	height: 25px;
+	background: #eeeeee url(/_css/_img/globalnav_bg.gif) no-repeat top left;
+}
+.nav-global-wrapper .main ul{
+	margin:0 0 0 160px;
+	width: 600px;
+	padding: 0;
+	list-style: none;
+}
+.nav-global-wrapper .main ul li {
+	float: left;
+	display:inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-global-wrapper .main ul a {
+	float: left;
+	display:inline;
+	text-decoration: none;
+	color: #666;
+	background: none; /* IE7 needs this to stop rollover float breakage */
+}
+.nav-global-wrapper .main ul a:hover,
+.nav-global-wrapper .main ul a.active {
+	color: #FFF;
+	background: #DDD;
+}
+.nav-global-wrapper .main ul a.active {
+	color: #FFF;
+	background-color: #9EBD5C;
+	font-weight: bold;
+	font-size: 100%;
+}
+/* global supplemental nav */
+.nav-global-wrapper .supplemental{
+	background: #FFF;
+	width: 740px;
+	margin: 0 10px;
+	padding: 0 0 8px 0;
+	font-size: 80%;
+	line-height:normal;
+}
+.nav-global-wrapper .supplemental{
+	background: #f8f8f8 url(/_css/_img/supplementalnav_bg.gif) no-repeat top left;
+	width: 760px;
+	margin: 0 0 10px 0;
+	padding: 6px 0 7px 0;
+	font-size: 85%;
+	line-height:normal;
+}
+.nav-global-wrapper .supplemental ul {
+	width: 708px;
+	margin:4px 16px;
+	padding: 0;
+	list-style: none;
+}
+.nav-global-wrapper .supplemental ul {
+	/*width: 708px;*/
+	/*margin: 4px 16px;*/
+	width: 740px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-global-wrapper .supplemental ul li 
+{
+    color: #666;
+	float:right;
+	margin: 0;
+	padding: 0 3px;
+	list-style: none;
+	border-right: 1px solid #ddd;
+	}
+.nav-global-wrapper .supplemental ul a {
+	padding: 2px 5px;
+	text-decoration: none;
+	background: url(/_img/spacer.gif) no-repeat 3px 50%;
+	color: #666;
+}
+.nav-global-wrapper .supplemental ul a:hover,
+.nav-global-wrapper .supplemental ul a.active {
+	text-decoration: underline;
+	color: #FF8200;
+}
+.nav-global-wrapper .supplemental ul a.active {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 100%;
+}
+.nav-global-wrapper .supplemental ul #right {
+	border:0;
+}
+.nav-global-wrapper .supplemental ul #login {
+
+}
+.nav-global-wrapper .supplemental ul #cart a{
+	padding-left: 22px;
+	background-image: url(/_css/_IMG/cart_empty.gif);
+}
+/* ----- (end global nav) ----- */
+
+/* ----- ( begin context nav)----- */
+.nav-context {
+	/*margin: 0 0 .5em 0 !important;*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width:140px;
+	background: none;
+}
+* html .nav-context img{margin: 0 0 -2px 0;}
+.nav-context li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-context li a {
+	display:block;
+	word-wrap: break-word;
+	padding: .2em 5px .2em 8px;
+	border-bottom: 1px dashed #b6b6b6;
+	color: #656565 !important;
+	font-size: 90% !important;
+	font-weight: bold;
+	text-decoration: none;
+}
+* html body .nav-context li a {width:127px;}
+.nav-context li a.active {
+	background: #9EBD5C;
+}
+.nav-context li a:hover,
+.nav-context li.selected a{
+	background: #eaeaea;
+	color: #333 !important;
+}
+/* sub nav elements */
+.nav-context li ul {
+	margin: 0;
+	padding: 0 5px;
+	list-style: none;
+	/*border: 1px solid #F1F1F1;*/
+	border-top:none;
+	border-bottom:none;
+	font-size: 90%;
+}
+.nav-context li ul li {
+	margin: 0;
+	padding: 0 5px;
+	list-style: none;
+	border-bottom: 1px dashed #B2B2B2;
+}
+.nav-context li ul li a {
+	color: #333 !important;
+	margin: 0;
+	padding: 2px 0;
+	text-decoration: none;/*underline;*/
+}
+#contextnav-products li ul li {
+	border-bottom: 1px dashed #FF7800 !important;
+}
+/* Hide from IE5-mac \*/
+* html .nav-context li ul li a {width:120px;}
+/* End hide from IE5-mac */ 
+.nav-context li ul li a:hover,
+.nav-context li ul li a.active {
+	color: #FF6C00 !important;
+	text-decoration:none;
+}
+.nav-context li ul #last{
+	border:none;
+	margin: 0;/* 0 5px 0;*/
+}
+/* ----- ( end context nav)----- */
+
+/* ----- ( begin section nav)----- */
+.nav-section-wrapper {
+	background: url(/_css/_img/sectionheader_base_lt.gif) no-repeat bottom left;
+	width: 590px;
+	border-top: 1px solid #dadada;
+	margin: 0 0 5px 0;
+}
+.nav-section-wrapper .content
+{
+	background: url(/_css/_img/sectionheader_base_rt.gif) no-repeat bottom right;
+}
+.nav-section {
+	float: left;
+	display:inline;
+	width: 580px;
+	margin: 0 5px;
+	padding: 0;
+	list-style: none;
+	font-size: 90%;
+	}
+.nav-section li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-right: 1px solid #ddd;
+	}
+.nav-section a {
+	float: left;
+	padding: 2px 7px;
+	text-decoration: none;
+	color: #111 !important;
+	background: none; /* IE7 needs this to stop rollover float breakage */
+}
+.nav-section a:hover{
+	color: #111 !important;
+	background: #e9e9e9;
+}
+.nav-section a.active,
+.nav-section a.active:hover {
+	color: #fff !important;
+	background-color: #74A8D0;
+	font-weight: bold;
+	font-size: 100%;
+}
+/* ----- ( end section nav)----- */
+
+/* ----- ( begin header nav)----- */
+.nav-header-wrapper {
+	width: 590px;
+	background: #ffffff url(/_css/_img/header_topleft.gif) top left no-repeat;
+} 
+.nav-header-wrapper .content {
+	padding: 10px 5px 5px;
+	background: url(/_css/_img/header_topright.gif) top right no-repeat;
+}
+.nav-header{
+	width:99%;/* mac hack */
+	margin: 0 3px 0 0;
+	padding: 0;
+	color: #333;
+	list-style: none;
+}
+.nav-header a{
+	padding: 2px;
+	background: url(/_img/spacer.gif) no-repeat 3px 50%;
+}
+.nav-header li{
+	float: left;
+	display:inline;
+}
+.nav-header li.title{
+	font-weight: bold;
+	color: #398AC2;
+}
+.nav-header li.right{
+	float: right;
+	text-align: right;
+}
+.nav-header a:hover,
+.nav-header a:active {
+	color: #000;
+	text-decoration:underline;
+}
+/* ----- ( begin header nav)----- */
+
+/* ----- (  begin contacts nav ) -----*/
+.nav-listing{
+	margin: 2px 3px;
+	width: 574px;
+	padding: 0;
+	color: #333;
+	list-style: none;
+	display: inline;
+	float: left;
+	font-size: 90%;
+}
+.nav-listing input,
+.nav-listing textarea,
+.nav-listing select{
+	font-size:100%;
+}
+.nav-listing li{
+	float: left;
+}
+.nav-listing li.right{
+	float: right;
+}
+/* set input button to 10px wide for mac */
+.nav-listing li input{width: 10px;}
+/* Hides from IE-mac \*/
+.nav-listing li input{
+	width: auto;
+}
+/* End hide from IE-mac */
+.nav-listing a{
+	float: left;
+	padding: 2px;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid #ffffff;
+}
+.nav-listing li input{
+	float: left;
+	padding: 2px 0;
+	background: #fff;
+	text-decoration: none;
+	font-size: 98%;
+	font-weight: bold;
+	border: 1px solid #fff;
+	cursor:pointer;
+}
+.nav-listing a:hover,
+.nav-listing a.active,
+.nav-listing li input.active{
+	color: #74A8D0;
+	font-weight: bold;
+	background-color: #fafafa;
+	border: 1px solid #dadada;
+}
+.nav-listing #all{
+	padding-right: 3px;
+	margin-right: 3px;
+	border-right: 1px solid #aaa;
+}
+/* ----- (  begin footer nav ) -----*/
+.nav-footer {
+	background: none;
+	display:inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 70%;
+}
+.nav-footer li {
+	display:inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav-footer a {
+	display:inline;
+	padding: 2px 7px;
+	text-decoration: none;
+	color: #666;
+	border-right: 1px solid #ddd;
+}
+.nav-footer a:hover{
+	text-decoration:underline;
+}
+.nav-footer #last a{
+	border:none;
+}
+.nav-footer #copyright{
+	/*font-size: 85%;*/
+	display:block;
+	margin: 2px 0 0 0;
+}
+/* ----- ( end footer nav ) -----*/
+/* ----- ( begin nav-optionsBar ) -----*/
+.nav-optionsBar{
+	margin: 5px 0;
+	padding: 0;
+	width: 100%;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 90%;
+	background: #e1efc2 !important;
+	list-style: none;
+}
+.nav-optionsBar li{
+	list-style: none;
+	float:left;
+	margin: 0;
+	padding: 2px;
+}
+.nav-optionsBar li.title{
+	font-weight: bold;
+	margin: 0 3px 0 3px;
+}
+.nav-optionsBar li a{
+	text-decoration: none;
+}
+.nav-optionsBar li a:hover{
+	text-decoration: underline;
+	color: #336600 !important;
+}

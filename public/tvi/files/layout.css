@@ -1,0 +1,222 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	line-height: 1.7; /* fix moz border bug */
+	color: #333;
+	background: #C5C5C5;
+	font-size: x-small; /* IE5 Win */
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	font-size: small;
+	}
+html>body { /* be nice to Opera */
+	font-size: small;
+	}
+/* ---( site wrapper ) -----------------*/
+#wrapper-header{
+	margin: 0 auto;
+	padding: 0 8px;
+	/*background: #fff url(/_css/_img/wrap_header.gif) no-repeat;*/
+	background: #fff url(/_css/_img/bg-sprite.gif) 0 0 no-repeat;
+	width: 776px;
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 760px;
+	height:15px;
+}
+html>body #wrapper-header {
+  	width: 760px;
+} 
+/* hide from mac IE5 \*/
+* html #wrapper-header{line-height: 0px;font-size:1%;}
+/* end hide from mac IE5 */
+
+/* main */
+#wrapper-main {
+
+	margin: 0 auto;
+	padding: 0 8px;
+	font-size: 95%;
+	text-align: left;
+	/*background: #fff url(/_css/_img/wrap_bg.gif) repeat-y;*/
+	background: #fff url(/_css/_img/bg-sprite.gif) -780px 0 repeat-y;
+	width: 776px;
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 760px;
+}
+#wrapper-main.context {
+	/*background: #fff url(/_css/_img/wrap_context_bg.gif) repeat-y;*/
+}
+#wrapper-main #global-content {
+	background: #fff url(/_css/_img/global_content_bg.gif) repeat-y 10px;
+}
+html>body #wrapper-main {
+  	width: 760px;
+}
+/* footer */
+#wrapper-footer{
+	clear:both;
+	margin: 0 auto 0 auto;
+	padding: 0 8px;
+	/*background: #fff url(/_css/_img/wrap_footer.gif) no-repeat bottom left;*/
+	background: #fff url(/_css/_img/bg-sprite.gif) 0 -20px no-repeat;
+	width: 776px;
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	width: 760px;
+	height:15px;
+}
+html>body #wrapper-footer {
+  	width: 760px;
+} 
+/* hide from mac IE5 \*/
+* html #wrapper-footer{line-height: 0px;font-size:1%;}
+/* endhide from mac IE5 */
+
+/* --- ( global elements ) ----------------*/
+/* global header */
+#global-header #nav {
+	float: left;
+	width: 760px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+	background: #F5F5F5;
+	border-bottom: 1px solid #ddd;
+}
+#global-header #nav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-right: 1px solid #ddd;
+}
+#global-header #nav li.leftend {
+	width: 160px;
+	border: none;
+}
+#global-header #nav li.rightend {
+	width: 20px;
+	border: none;
+}
+#global-header #nav a {
+	float: left;
+	padding: 2px 7px 2px 7px;
+	text-decoration: none;
+	color: #666;
+}
+#global-header #nav a:hover,
+#global-header #nav a.active {
+	color: #FFF;
+	background-color: #DDD;
+}
+#global-header #nav a.active {
+	color: #FFF;
+	background-color: #9EBD5C;
+	font-weight: bold;
+	font-size: 100%;
+}
+/* global footer */
+#global-footer{
+	clear:both;
+	text-align:center;
+	/*background: #fff url(/_css/_img/wrap_bg.gif) repeat-y;*/
+}
+#global-footer #nav {
+	float: left;
+	width: 760px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #ddd;
+	}
+#global-footer #nav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-right: 1px solid #ddd;
+	}
+#global-footer #nav a {
+	float: left;
+	padding: 2px 7px 2px 7px;
+	text-decoration: none;
+	color: #666;
+	}
+#global-footer #nav a:hover,
+#global-footer #nav a.active {
+	color: #FFF;
+	background-color: #DDD;
+	}
+#global-footer #nav a.active {
+	color: #FFF;
+	background-color: #9EBD5C;
+	font-weight: bold;
+	font-size: 100%;
+	}
+/* sidebar */
+#global-sidebar{
+	margin: 0 10px;
+	width: 140px;
+	float:left;
+	display: inline;
+}
+#global-sidebar #nav {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #F5F5F5;
+	}
+#global-sidebar #nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+#global-sidebar #nav a {
+	display:block;
+	padding: 2px 7px 2px 7px;
+	text-decoration: none;
+	color: #666;
+	width: 90%;
+	}
+#global-sidebar #nav a:hover,
+#global-sidebar #nav a.active {
+	color: #FFF;
+	background-color: #DDD;
+	}
+#global-sidebar #nav a.active {
+	color: #FFF;
+	background-color: #9EBD5C;
+	font-weight: bold;
+	font-size: 100%;
+}
+/* --- ( content elements) -------------*/
+#content-contextual{
+	width: 590px;
+	float: right;
+	margin-right: 10px;
+	display: inline;
+}
+#content-standard{
+	width: 740px;
+	clear:both;
+	margin: 0 10px;
+	/*display: inline;*/
+}
+
+/* --- ( general. ) -------------*/
+b{
+	font-size: 98%;
+}
+a{
+	/*color:#111;*/
+}
+table{
+	border-spacing:0;
+	border-collapse:collapse;
+}

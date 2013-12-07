@@ -3,8 +3,15 @@
 body {
   background: #fafafa; }
 
+.centered {
+  width: 64em;
+  height: 6.5em;
+  margin: 0 auto;
+  border-bottom: 12px solid #d35400; }
+
 .row {
-  max-width: 100%; }
+  max-width: 64em;
+  background: #fff; }
   .row .row {
     margin-left: 0;
     margin-right: 0; }
@@ -17,31 +24,36 @@ header {
   background: #e67e22;
   margin: 0;
   padding: 0;
-  height: 6.5em;
-  border-bottom: 10px solid #d35400; }
+  height: 6.5em; }
   header .logo {
     display: block;
     width: 69px;
     height: 60px;
     float: left;
-    margin: 10px 0 0 170px; }
+    margin: 10px 0 0 0; }
   header h1 {
     font: 1.5em "Lato", sans-serif;
     font-weight: 100;
     color: #fff;
-    padding: 1em 0 0 12em;
+    padding: 1.5em 0 0 6em;
     margin: 0; }
+
+.side-nav li a {
+  color: #333;
+  font: bold 16px "Lato", sans-serif; }
 
 .columns.small-centered {
   background: #fff;
-  -webkit-box-shadow: 0px 0px 5px 0px #eeeeee;
-  -moz-box-shadow: 0px 0px 5px 0px #eeeeee;
-  box-shadow: 0px 0px 5px 0px #eeeeee;
-  border-right: 1px solid #f9f9f9;
-  padding: 0; }
+  /*@include box-shadow(0px 0px 5px 0px #eee);*/
+  padding: 0;
+  border-top: 10px solid #d35400; }
   .columns.small-centered h1 {
     padding: 0;
     margin: 0; }
+
+.breadcrumbs {
+  border: none;
+  background-color: transparent; }
 
 footer {
   background: #ecf0f1; }

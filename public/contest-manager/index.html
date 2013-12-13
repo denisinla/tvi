@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://www.8005555555.com/newpublisher/Ad.aspx?msg=208&pub=200000012&w=Winner -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="./partners-ad_files/new.css" rel="stylesheet" type="text/css">
+    <link href="./partners-ad_files/css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./partners-ad_files/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#clID").val(getParameterByName('pub'));
+            $("#pubsite").val(getParameterByName('w'));
+            var new_msg = getParameterByName('msg');
+            if (new_msg) {
+                $.ajax({
+                    type: "POST",
+                    url: "http://www.8005555555.com/newpublisher/AdTracking.asmx/GetPhoneFromMessage",
+                    // data: { messageID: '" + getParameterByName(msg) + "' },
+                    data: { messageID: new_msg },
+                    success: function (msg) {
+                        $("#phNo").val(msg.childNodes[0].textContent);
+
+                    },
+                    error: function (e) {
+                        alert(e);
+                    }
+                });
+            }
+            //alert("hi");
+        });
+
+        function trackAndRedirect(obj, lnk) {
+            var divToBeWorkedOn = "#res";
+            var webMethod = "http://www.8005555555.com/newpublisher/AdTracking.asmx/GetTracking";
+            var parameters = "{clientID:'" + $("#clID").val() + "',CampaignID:'" + obj.id + "',PhoneNumber:'" + $("#phNo").val() + "',pubsite:'" + $("#pubsite").val() + "'}";
+            var cid = obj.id;
+            cid = cid.replace("cl", "");
+            $.ajax({
+                type: "POST",
+                url: webMethod,
+                data: { clientID: $("#clID").val(), CampaignID: cid, PhoneNumber: $("#phNo").val(), pubsite: $("#pubsite").val() },
+                success: function (msg) {
+                    window.location.href = lnk;
+                },
+                error: function (e) {
+                    //alert(e);
+                }
+            });
+        }
+
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\?&]" + name + "=([^&#]*)",
+      regex = new RegExp(regexS),
+      results = regex.exec(window.location.href);
+            if (results == null) {
+                return "";
+            } else {
+                return decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+        }
+
+    </script>
+<link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script></head>
+<body id="mainbody" class="inner cf" style="background-image: url(http://www.8005555555.com/themes/default/logo/7_Winner_bodybg.jpg); background-color: rgb(51, 51, 255); zoom: 1; background-position: initial initial; background-repeat: initial initial;" screen_capture_injected="true">
+<form method="post" action="./partners-ad_files/partners-ad.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA0MzQ3NTQ5OA9kFgICAQ8WAh4Fc3R5bGUFXGJhY2tncm91bmQ6ICMzMzMzRkYgIHVybChodHRwOi8vd3d3LjgwMDU1NTU1NTUuY29tL3RoZW1lcy9kZWZhdWx0L2xvZ28vN19XaW5uZXJfYm9keWJnLmpwZyk7FgICAQ9kFg4CAQ8WAh8ABW5jb2xvcjojZmZmO2JhY2tncm91bmQ6IHdoaXRlIHVybChodHRwOi8vd3d3LjgwMDU1NTU1NTUuY29tL3RoZW1lcy9kZWZhdWx0L2xvZ28vN19XaW5uZXJfaGVhZGVyLmpwZykgbm8tcmVwZWF0O2QCAw8WBB8ABSZiYWNrZ3JvdW5kLWNvbG9yOiNGRkZGRkY7Y29sb3I6IzAwMDAwMB4JaW5uZXJodG1sBRZGcmVlIFRpY2tldHMgUHJvbW90aW9uZAIFDxYCHgdWaXNpYmxlaGQCBw8WAh8ABSZkaXNwbGF5OmJsb2NrO2JhY2tncm91bmQtY29sb3I6IzAwMDAwMBYGAgEPFgQfAAUNY29sb3I6I0ZGMDA2Nh8BBRo8Yj5Ub3Agb2YgQ291bnRlciBUZXh0PC9iPmQCAw8WBB8ABQ1jb2xvcjojRkYwMDY2HwEFGzxiPllvdSBhcmUgY2FsbGVyICMgMTA3PC9iPmQCBQ8WBB8ABQ1jb2xvcjojRkYwMDY2HwEFJDxiPkNoZWNrIGJlbG93IGZvciBvdGhlciBvZmZlcnMgPC9iPmQCCQ88KwARAgAPFgQeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnQCBmQBEBYAFgAWABYCZg9kFhBmDw8WAh8CaGRkAgEPZBYCZg9kFgICAQ8WAh8CaBYCZg8VBhZodHRwOi8vd3d3LmJhaGFtYXMuY29tAjMxUWh0dHA6Ly9pbWFnZXMudGhldm9pY2VpbnRlcm5ldC5jb20vNTAwMDAxODgyLzY2NTUwZDY5ZjIyMTQwYjU5NGRhMDNlYmY2NDcwYzU3LmpwZw9HbyB0byBCYWhhbWFzISEfVGFrZSB5b3VyIGZhbWlseSBmb3IgYSB2YWNhdGlvbhFHZXQgdGhpcyB2YWNhdGlvbmQCAg9kFgJmD2QWAgIBD2QWAmYPFQYTaHR0cDovL3d3dy5ib2IxLmNvbQIxOFFodHRwOi8vaW1hZ2VzLnRoZXZvaWNlaW50ZXJuZXQuY29tLzUwMDAwMjAxMS8zZTM1ZTA1OTMzODA0MWZkYWM2ZWYyOGIzM2IzMzBiZi5qcGcNTGVuemluaSBQaXp6YRJCdXkgMSBnZXQgMSBmcmVlISEOQnV5IHlvdXIgcGl6emFkAgMPZBYCZg9kFgICAQ8WAh8CaBYCZg8VBhRodHRwOi8vTmFpbWVzaDE3LmNvbQIxN1FodHRwOi8vaW1hZ2VzLnRoZXZvaWNlaW50ZXJuZXQuY29tLzUwMDAwMjAxMS9jYTlhZjEyZDdlMjY0MDVjOTEyNWFjY2Y1MGZmYmQ5Zi5qcGcXUmVnaXN0ZXIgeW91ciBUcmFkZW1hcmsPRmFzdCBhbmQgZWFzeSEhCFJlZ2lzdGVyZAIED2QWAmYPZBYCAgEPZBYCZg8VBhRodHRwOi8vTmFpbWVzaDEwLmNvbQIxNVFodHRwOi8vaW1hZ2VzLnRoZXZvaWNlaW50ZXJuZXQuY29tLzUwMDAwMjAxMS81NTgzNDE3YjZlN2Y0NzZmYTdlNDVkYjZiNWFhYjJjYy5qcGcXU2hpcCBCb3VxdWV0IGFueXdoZXJlISERRmFzdCBhbmQgcmVsaWFibGUMU2VuZCBCb3VxdWV0ZAIFD2QWAmYPZBYCAgEPZBYCZg8VBhxodHRwOi8vdGhldm9pY2VpbnRlcm5ldC5jb20vAjMzUWh0dHA6Ly9pbWFnZXMudGhldm9pY2VpbnRlcm5ldC5jb20vNTAwMDAyMDExLzEwMmQ5NTFmOWZkZDQxYzQ5MmU5MWE2ZjVhY2MyYmJkLmpwZwhjb250ZXN0Ywhjb250ZXN0Ywhjb250ZXN0Y2QCBg9kFgJmD2QWAgIBD2QWAmYPFQYdaHR0cDovL3d3dy5qdXN0c2F5eWVsbG93LmNvbS8CMzRRaHR0cDovL2ltYWdlcy50aGV2b2ljZWludGVybmV0LmNvbS81MDAwMDIwMTEvZmVhMGM4YzgzNWE5NDEyNGIyYzk1NWNmYTM0ZWJmNjcuanBnFHNob3BwaW5nIHRleHQgdGVzdCAyFHNob3BwaW5nIHRleHQgdGVzdCAzFHNob3BwaW5nIHRleHQgdGVzdCA0ZAIHDw8WAh8CaGRkAgsPFgQfAAUmYmFja2dyb3VuZC1jb2xvcjojRkYwMDY2O2NvbG9yOiNGRjAwNjYfAQUOVGhpcyBpcyBGb290ZXJkAg0PFgIfAAVuY29sb3I6I2ZmZjtiYWNrZ3JvdW5kOiB3aGl0ZSB1cmwoaHR0cDovL3d3dy44MDA1NTU1NTU1LmNvbS90aGVtZXMvZGVmYXVsdC9sb2dvLzdfV2lubmVyX2Zvb3Rlci5qcGcpIG5vLXJlcGVhdDtkGAEFCUdyaWRWaWV3MQ88KwAMAQgCAWRmMwNCfSEyC5j74crch+iorV9+jc6p/MT6/I1YbAzo6g==">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKQs6OBBgLE+/OuCQKq7erhAQK6sq7XCDheMbTwWnVQeVsS2XI7ef112uBcLWm6MQjZMtxb29/+">
+</div>
+<div id="wrapper">
+
+    <div id="header" style="color:#fff;background: white url(http://www.8005555555.com/themes/default/logo/7_Winner_header.jpg) no-repeat;">
+    </div>
+    <div id="headline" style="background-color:#FFFFFF;color:#000000">Free Tickets Promotion</div>
+
+    <div id="Counter" style="display:block;background-color:#000000">
+        <div id="ctop" style="color:#FF0066"><b>Top of Counter Text</b></div>
+        <div id="cmiddle" style="color:#FF0066"><b>You are caller # 107</b></div>
+        <div id="cbottom" style="color:#FF0066"><b>Check below for other offers </b></div>
+    </div>
+    <div>
+	<table cellspacing="0" rules="all" border="1" id="GridView1" style="width:100%;border-collapse:collapse;">
+		<tbody><tr>
+			<td>
+
+
+                </td>
+		</tr><tr>
+			<td>
+                    <div id="GridView1_adDiv_1" class="adDiv">
+                        <div onclick="trackAndRedirect(this,&#39;http://www.bob1.com&#39;)" id="cl18" class="ad-content">
+                            <div class="image">
+                                <div class="coupon-image"><img src="./partners-ad_files/3e35e059338041fdac6ef28b33b330bf.jpg"></div>
+                            </div>
+                            <div class="content">
+                                <h2>
+                                    Lenzini Pizza the best pizza in town</h2>
+                                <p>
+                                    Lorem ipsum dolore sit amet consectuer adiscipling.</p>
+                                <button>
+                                    Buy your pizza</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+		</tr><tr>
+			<td>
+
+
+                </td>
+		</tr><tr>
+			<td>
+                    <div id="GridView1_adDiv_3" class="adDiv">
+                        <div onclick="trackAndRedirect(this,&#39;http://Naimesh10.com&#39;)" id="cl15" class="ad-content">
+                            <div class="image">
+                                <div class="coupon-image"><img src="./partners-ad_files/5583417b6e7f476fa7e45db6b5aab2cc.jpg"></div>
+                            </div>
+                            <div class="content">
+                                <h2>
+                                    Ship Bouquet anywhere!! find out more now</h2>
+                                <p>
+                                    Fast and reliable</p>
+                                <button>
+                                    Send Bouquets</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+		</tr><tr>
+			<td>
+                    <div id="GridView1_adDiv_4" class="adDiv">
+                        <div onclick="trackAndRedirect(this,&#39;http://thevoiceinternet.com/&#39;)" id="cl33" class="ad-content">
+                            <div class="image">
+                                <div class="coupon-image"><img src="./partners-ad_files/102d951f9fdd41c492e91a6f5acc2bbd.jpg"></div>
+                            </div>
+                            <div class="content">
+                                <h2>
+                                    contestc</h2>
+                                <p>
+                                    contestc</p>
+                                <button>
+                                    Send some nice</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+		</tr><tr>
+			<td>
+                    <div id="GridView1_adDiv_5" class="adDiv">
+                        <div onclick="trackAndRedirect(this,&#39;http://www.justsayyellow.com/&#39;)" id="cl34" class="ad-content">
+                            <div class="image">
+                                <div class="coupon-image"><img src="./partners-ad_files/fea0c8c835a94124b2c955cfa34ebf67.jpg"></div>
+                            </div>
+                            <div class="content">
+                                <h2>
+                                    Grow thick and beautiful hair today for free</h2>
+                                <p>
+                                    shopping text test 3</p>
+                                <button>
+                                    shopping hair</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+		</tr>
+	</tbody></table>
+</div>
+    <div id="footline" style="background-color:#FF0066;color:#FF0066">This is Footer</div>
+    <div id="footer" style="color:#fff;background: white url(http://www.8005555555.com/themes/default/logo/7_Winner_footer.jpg) no-repeat;">
+    </div>
+    <div id="res">
+    </div>
+    <input type="hidden" name="phNo" id="phNo" value="2485351516">
+    <input type="hidden" name="clID" id="clID" value="200000012">
+    <input type="hidden" name="pubsite" id="pubsite" value="Winner">
+
+    </div>
+    </form>
+
+
+</body></html>
